@@ -1,0 +1,438 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<!-- ======================================================================= -->
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+<style type="text/css">
+  body {
+    font-family: "Crimson Text","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight:300;
+    font-size:18px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  pre {
+    background-color: #f6f8fa;
+    padding: 16px;
+  }
+
+  code {
+    font-family: "SFMono-Regular","Consolas","Liberation Mono","Menlo",monospace;
+    overflow: scroll;
+  }
+
+  h1 {
+    font-family: "Source Sans Pro";
+    font-weight:300;
+  }
+
+  div {
+    max-width: 95%;
+    margin:auto;
+    padding: 10px;
+  }
+
+  .table-like {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .disclaimerbox {
+    background-color: #eee;
+    border: 1px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+    padding: 20px;
+  }
+
+  video.header-vid {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  img {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  iframe {
+    max-width: 100%;
+  }
+
+  img.header-img {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  img.rounded {
+    border: 1px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  a:link,a:visited
+  {
+    color: #1367a7;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #208799;
+  }
+
+  td.dl-link {
+    height: 160px;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+            5px 5px 0 0px #fff, /* The second layer */
+            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+            10px 10px 0 0px #fff, /* The third layer */
+            10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+            15px 15px 0 0px #fff, /* The fourth layer */
+            15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+            20px 20px 0 0px #fff, /* The fifth layer */
+            20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+            25px 25px 0 0px #fff, /* The fifth layer */
+            25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+    margin-left: 10px;
+    margin-right: 45px;
+  }
+
+
+  .layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+            5px 5px 0 0px #fff, /* The second layer */
+            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+            10px 10px 0 0px #fff, /* The third layer */
+            10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-bottom: 5px;
+  }
+
+  .vert-cent {
+    position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+
+  hr
+  {
+    border: 0;
+    height: 1px;
+    max-width: 1100px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }
+
+  #authors td {
+    padding-bottom:5px;
+    padding-top:30px;
+  }
+</style>
+<!-- ======================================================================= -->
+
+<!-- Start : Google Analytics Code -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-64069893-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-64069893-4');
+</script> -->
+<!-- End : Google Analytics Code -->
+
+<script type="text/javascript" src="resources/hidebib.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+<head>
+<div max-width=100%>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="57x57" href="//www-media.stanford.edu/assets/favicon/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="//www-media.stanford.edu/assets/favicon/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="//www-media.stanford.edu/assets/favicon/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="//www-media.stanford.edu/assets/favicon/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="//www-media.stanford.edu/assets/favicon/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="//www-media.stanford.edu/assets/favicon/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="//www-media.stanford.edu/assets/favicon/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="//www-media.stanford.edu/assets/favicon/apple-touch-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="//www-media.stanford.edu/assets/favicon/apple-touch-icon-180x180.png" />
+
+  <link rel="icon" type="image/png" href="//www-media.stanford.edu/assets/favicon/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="//www-media.stanford.edu/assets/favicon/favicon-192x192.png" sizes="192x192" />
+  <link rel="icon" type="image/png" href="//www-media.stanford.edu/assets/favicon/favicon-128.png" sizes="128x128" />
+  <link rel="icon" type="image/png" href="//www-media.stanford.edu/assets/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="//www-media.stanford.edu/assets/favicon/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="//www-media.stanford.edu/assets/favicon/favicon-16x16.png" sizes="16x16" />
+
+  <link rel="mask-icon" href="//www-media.stanford.edu/assets/favicon/safari-pinned-tab.svg" color="#ffffff">
+  <meta name="application-name" content="Stanford University"/>
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="//www-media.stanford.edu/assets/favicon/mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="//www-media.stanford.edu/assets/favicon/mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="//www-media.stanford.edu/assets/favicon/mstile-150x150.png" />
+  <meta name="msapplication-square310x310logo" content="//www-media.stanford.edu/assets/favicon/mstile-310x310.png" />
+  <title>Step-by-Step Remediation of Students' Mathematical Mistakes</title>
+<meta name="HandheldFriendly" content="True" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="canonical" href="https://rosewang2008.github.io/" />
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+<meta property="og:site_name" content="SIGHT" />
+<meta property="og:type" content="video.other" />
+<meta property="og:title" content="Step-by-Step Remediation of Students' Mathematical Mistakes" />
+<meta property="og:description" content="Rose E. Wang, Qingyang Zhang, Carly Robinson, Susanna Loeb, Dorottya Demszky. Step-by-Step Remediation of Students' Mathematical Mistakes. 2020." />
+<meta property="og:url" content="https://rosewang2008.github.io/" />
+<meta property="og:image" content="https://rosewang2008.github.io/resources/blue.svg" />
+
+<meta property="article:publisher" content="https://rosewang2008.github.io/" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Step-by-Step Remediation of Students' Mathematical Mistakes" />
+<meta name="twitter:description" content="Rose E. Wang, Qingyang Zhang, Carly Robinson, Susanna Loeb, Dorottya Demszky. Step-by-Step Remediation of Students' Mathematical Mistakes. 2020." />
+<meta name="twitter:url" content="https://rosewang2008.github.io/" />
+<meta name="twitter:image" content="https://rosewang2008.github.io/resources/red.png" />
+<meta property="og:image:width" content="1600" />
+<meta property="og:image:height" content="900" />
+
+<script src="https://www.youtube.com/iframe_api"></script>
+<!-- TODO -->
+<meta name="twitter:player" content="" />
+<meta name="twitter:player:width" content="640" />
+<meta name="twitter:player:height" content="360" />
+</head>
+
+<body>
+
+    <br>
+    <center><span style="font-size:44px;font-weight:bold;font-family:Source Sans Pro;">Step-by-Step Remediation of Students' Mathematical Mistakes</span></center><br/>
+    
+    <div class="table-like" style="justify-content:space-evenly;max-width:900px;margin:auto;">
+        <div><center><span style="font-size:25px"><a href="https://cs.stanford.edu/~rewang" target="_blank">Rose E. Wang</a></span></center>
+        <!-- <center><span style="font-size:20px">rewang@cs.stanford.edu</span></center> -->
+        <!-- <center><span style="font-size:25px">Stanford</span></center> -->
+        </div>
+
+        <div><center><span style="font-size:25px"><a href="" target="_blank">Qingyang Zhang</a></span></center>
+        <!-- <center><span style="font-size:25px">Stanford</span></center> -->
+        </div>
+
+        <div><center><span style="font-size:25px"><a href="" target="_blank">Carly Robinson</a></span></center>
+        <!-- <center><span style="font-size:25px">Stanford</span></center> -->
+        </div>
+
+        <div><center><span style="font-size:25px"><a href="" target="_blank">Susanna Loeb</a></span></center>
+        </div>
+
+
+        <div><center><span style="font-size:25px"><a href="https://www.dorademszky.com/" target="_blank">Dorottya Demszky</a></span></center>
+        <!-- <center><span style="font-size:20px">ddemszky@stanford.edu</span></center> -->
+        <!-- <center><span style="font-size:25px">Stanford</span></center> -->
+        </div>
+
+        <center><span style="font-size:25px">rewang@cs.stanford.edu, ddemszky@stanford.edu</span></center>
+
+    </div>
+  
+    <div class="table-like" style="justify-content:space-evenly;max-width:700px;margin:auto;padding:5px">
+        <center><span style="font-size:25px">2023</span></center>
+      <!-- <div><center><span style="font-size:28px"><a href=''>[Video]</a></span></center> </div> -->
+    </div>
+
+    <div class="table-like" style="justify-content:space-evenly;max-width:700px;margin:auto;padding:5px">
+      <div><center><span style="font-size:28px"><a href="https://arxiv.org/abs/2310.10648">[Paper]</a></span></center></div>
+      <div><center><span style="font-size:28px"><a href='https://github.com/rosewang2008/remath'>[Code]</a></span></center> </div>
+      <!-- <div><center><span style="font-size:28px"><a href=''>[Video]</a></span></center> </div> -->
+    </div>
+
+    <center>
+    <!-- <iframe width="768" height="432" src="https://www.youtube.com/embed/M729eZ8pFOU" allowfullscreen></iframe> -->
+    <br>
+
+
+      <a href="assets/remath.png"><img src="assets/remath.png" width="800px" padding="10px"></img></a>
+
+    <div style="width:800px; margin:0 auto" align="justify">
+      <p><b>Abstract.</b> Scaling high-quality tutoring is a major challenge in education. Because of the growing demand, many platforms employ novice tutors who, unlike professional educators, struggle to effectively address student mistakes and thus fail to seize prime learning opportunities for students. In this paper, we explore the potential for large language models (LLMs) to assist math tutors in remediating student mistakes. We present ReMath, a benchmark co-developed with experienced math teachers that deconstructs their thought process for remediation. The benchmark consists of three step-by-step tasks: (1) infer the type of student error, (2) determine the strategy to address the error, and (3) generate a response that incorporates that information. We evaluate the performance of state-of-the-art instruct-tuned and dialog models on ReMath. Our findings suggest that although models consistently improve upon original tutor responses, we cannot rely on models alone to remediate mistakes. Providing models with the error type (e.g., the student is guessing) and strategy (e.g., simplify the problem) leads to a 75% improvement in the response quality over models without that information. Nonetheless, despite the improvement, the quality of the best model's responses still falls short of experienced math teachers. Our work sheds light on the potential and limitations of using current LLMs to provide high-quality learning experiences for both tutors and students at scale.
+
+    </p>
+    </div>
+    <br><hr>
+
+    <center><h1>ReMath: A Step-by-Step Remediation Framework</h1></center>
+    <div style="width:800px; margin:0 auto" align="justify">
+      <a href="assets/example_remediation.png"><img src="assets/example_remediation.png" width="700px" padding="10px"></img></a>
+      <center><span style="font-size:15px">Example of remediation.</span></center>
+      <p>
+The benchmark has three core tasks.
+<b>Task A</b>: Infer the type of student error, <b>Task B</b>: Determine a response strategy and intention of that strategy, and <b>Task C</b>: Generate a response that incorporates the information.
+<!-- Figure~\ref{fig:main_figure} illustrates \frameworkname{}. -->
+The framework for ReMath emerged from an extensive co-development with math teachers, spanning several months of collaboration.
+We developed it with the intention that the framework is comprehensive, intuitive, and aligned with the process that teachers actually follow. 
+      </p>
+
+    <div style="padding:20px">
+      <center><h2>Task A. Infer the Type of Student Error</h2></center>
+      <p>
+  Identifying the student's errors is prerequisite to successful remediation  (Easley and Zwoyer, 1975; Bamberger et al., 2010).
+  Task A involves teachers to infer the most likely cause of mistake from context.
+  Prior research---particularly in math teacher education---has often focused on topic-specific categories of misconceptions, such as Bamberger et al. (2010). 
+Our approach intends to support tutors who are not necessarily content experts, therefore we instead define ``error'' as a student's degree of understanding; this definition aligns with literature on the hierarchical design of mathematics curricula (Gagne, 1962, 1968; White, 1973; Resnick et al., 1973) and psychometrics, including constructs like the Zone of Proximal Development and item-response theory which have continuous scales of mastery and use student responses to update the inferred level of student understanding(Glaser and Nitko, 1970; Vygotsky and Cole, 1978; Wertsch, 1985; Embretson and Reise, 2013).
+As such, our error categories are topic-agnostic descriptions of a student's understanding, and complement the topic-agnostic strategies in Task B.
+      </p>
+        <ul>
+            <li>
+              <b>guess</b>: The student does not seem to understand or guessed the answer.This error type is characterized by expressions of uncertainty or answers unrelated to the problem or target answer.
+            </li>
+            <li>
+              <b>misinterpret</b>: The student misinterpreted the question.
+            This error type is characterized by answers that arise from a misunderstanding of the question. 
+            Students may mistakenly address a subtly different question, leading to an incorrect response. 
+            One example is reversing numbers, e.g., interpreting ``2 divided by 6'' as ``6 divided by 2.'' 
+            </li>
+            <li>
+              <b>careless</b>: The student made a careless mistake.
+              This error type is characterized by answers that appear to utilize the correct mathematical operation but contain a small numerical mistake, resulting in an answer that is slightly off. 
+            </li>
+            <li>
+              <b>right-idea</b>: Student has the right idea, but is not quite there.
+              This error type is characterized by situations where the student demonstrates a general understanding of the underlying concept but falls short of reaching the correct solution.
+              For example, a student with a ``right-idea'' error may recognize that multiplication is required to compute areas but may struggle with applying it to a specific problem.
+            </li>
+            <li>
+              <b>imprecise</b>: Student’s answer is not precise enough or the tutor is being too picky about the form of the student’s answer.
+              This error type is characterized by  answers that lacks the necessary level of precision or when the tutor places excessive emphasis on the form of the student's response.
+            </li>
+            <li>
+              <b>not-sure</b>: Not sure, but I’m going to try to diagnose the student.
+              This option is used if the teacher is not sure why the student made the mistake from the context provided. 
+              We encourage the teachers to use this error type sparingly.
+            </li>
+            
+            <li>
+              <b>N/A</b>: None of the above, I have a different description.
+              This option is used when none of the other options reflect the error type. Similar to the not-sure, we encourage teachers to use this error type sparingly.
+            </li>
+            
+        </ul>
+
+    </div>
+
+    <div style="padding:20px">
+      <center><h2>Task B. Determine a Response Strategy and Intention of the Strategy</h2></center>
+      <p>
+Student errors are usually persistent unless the teacher intervenes pedagogically (Radatz 1980). 
+This task involves selecting a course of action that guides the student towards improving their understanding. 
+It also involves specifying the intention. 
+      </p>
+      <p>
+      <b>Strategies:</b> Explain a concept, Ask a question, Provide a hint, Provide a strategy, Provide a worked example, Provide a minor correction, Provide a similar problem, Simplify the question, Affirm the correct answer, Encourage the student, Other. 
+      </p>
+      <p>
+        <b>Intentions:</b>
+      Motivate the student, Get the student to elaborate their answer, Correct the student's mistake, Hint at the student's mistake, Clarify a student's misunderstanding, Help the student understand the lesson topic or solution strategy, Diagnose the student's mistake, Support the student in their thinking or problem-solving, Explain the student's mistake (e.g., what is wrong in their answer or why is it incorrect), Signal to the student that they have solved or not solved the problem, Other.
+      </p>
+
+    </div>
+
+    <div style="padding:20px">
+      <center><h2>Task C. Generate the Response</h2></center>
+
+      Once the student error has been identified and a response strategy has been determined, the next task is to generate a suitable response. 
+      We instruct teachers to respond in a useful and caring way.
+      Experienced educators possess the instructional expertise to generate responses that are tailored to the individual student's needs (e.g., their error type) and age group. 
+      This is important as the students from this tutoring program are elementary school students, who require different pedagogical strategies than older students \citep{anghileri2006scaffolding}. 
+
+    </div>
+
+    <center><h1>Some results...</h1></center>
+    <div style="width:800px; margin:0 auto" align="justify">
+      <a href="assets/task3_results.png"><img src="assets/task3_results.png" width="700px" padding="10px"></img></a>
+      <center><span style="font-size:15px">Evaluation of Task C.</span></center>
+      <p>
+The table above summarizes the evaluation results of Task C. 
+Notably, models consistently outperform the original tutor response (indicated by positive values) on all dimensions, with the exception of strategy-constrained Flan-T5 being worse on all dimensions and ChatGPT being worse on care. 
+The teacher-written responses are the most highly rated on all dimensions except, surprisingly, on human-soundingness. 
+
+
+The best model across all settings is GPT4, and it benefits most from teacher-annotations. 
+The ratings for GPT4 from the <i>unconstrained</i> to <i>strategy-constrained</i> setting nearly double across all the dimensions except care.
+Its care rating only improves when error information is added.
+The image before shows responses from GPT4 that illustrate the diversity in remediation strategies.
+In the unconstrained setting, GPT4 directly corrects the student, while the other models utilize different approaches to prompt the student to try again. 
+The error-constrained GPT4 provides a solution strategy tailored to the specific problem, while the strategy-constrained GPT4 abstracts the details of applying the strategy. 
+The complete-constrained GPT4 model combines both approaches, offering a comprehensive but long remediation response.
+These results highlight the challenge for models in generating simultaneously useful and caring responses to student mistakes.
+
+      </p>
+
+
+    <center><h2>For more details, please check out our paper linked below!</h2></center>
+    <br><hr>
+
+    <center><h1>Paper and BibTeX</h1></center>
+    <table align=center width=800px>
+      <tr>
+      <td width=200px align=left>
+        <pre align=left><code>@misc{wang2023stepbystep,
+          title={Step-by-Step Remediation of Students' Mathematical Mistakes}, 
+          author={Rose E. Wang and Qingyang Zhang and Carly Robinson and Susanna Loeb and Dorottya Demszky},
+          year={2023},
+          eprint={2310.10648},
+          archivePrefix={arXiv},
+          primaryClass={cs.CL}
+    }</code></pre>
+      </td>
+    </table>
+    <div class="table-like">
+      <span style="font-size:28px"><a href="https://arxiv.org/abs/2310.10648">[ArXiv]</a></span>
+    </div>
+  <br><hr>
+    <center id="acknowledgements"><h1>Acknowledgements</h1></center>
+      <p>
+        This website is adapted from
+        <a href="https://ezliu.github.io/dream/">this website</a>, which was adapted from
+        <a href="https://orybkin.github.io/video-gcp/">this website</a>, which was
+        in turn adapted from
+        <a href="https://pathak22.github.io/modular-assemblies/">this website</a>.
+        Feel free to use this website as a template for your own projects by referencing this!
+      </p>
+
+      <p>
+        Icons used in some of the above figures were made by Freepik,
+        ThoseIcons, dDara, Pixel perfect, ThoseIcons, mynamepong, Icongeek26,
+        and Vitaly Gorbachev from
+        <a href="https://www.flaticon.com">flaticon.com</a>.
+      </p>
+  </table>
+</div>
+</body>
+</html>
