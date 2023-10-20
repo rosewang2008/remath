@@ -7,10 +7,13 @@
 If you find our work useful or interesting, please consider citing it! 
 
 ```
-@inproceedings{wang2023step,
-  title = {Step-by-Step Remediation of Students' Mathematical Mistakes},
-  year = {2023},
-  author = {Wang, Rose E. and Zhang, Qingyang and Robinson, Carly and Loeb, Susanna and Demszky, Dorottya},
+@misc{wang2023stepbystep,
+      title={Step-by-Step Remediation of Students' Mathematical Mistakes}, 
+      author={Rose E. Wang and Qingyang Zhang and Carly Robinson and Susanna Loeb and Dorottya Demszky},
+      year={2023},
+      eprint={2310.10648},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
 }
 ```
 
